@@ -3,6 +3,12 @@
   "version": "0.1.0",
   "description": "lepont bridge for PermissionsAndroid",
   "main": "dist/index.js",
+  "types": "./types/index.d.ts",
+  "files": [
+    "dist",
+    "types",
+    "bridge"
+  ],
   "scripts": {
     "test": "jest",
     "dist": "tsc",
