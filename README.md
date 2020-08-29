@@ -38,7 +38,6 @@ On browser side:
 
 ```ts
 import { PermissionsAndroid } from '@lepont/permissions-android'
-```
 
 const permission = await PermissionsAndroid.request(
   PermissionsAndroid.PERMISSIONS.WRITE_EXTERNAL_STORAGE,
@@ -58,9 +57,33 @@ if (granted === PermissionAndroid.RESULTS.GRANTED) {
 }
 ```
 
+# APIs: Methods
+
+## `PermissionsAndroid.request(perm: Permission, rationale?: Rationale): Promise<Result>`
+
+Requests the give permissions with the given rationale.
+
+## `PermissionsAndroid.check(perm: Permission): Promise<Result>`
+
+Checks the given permission.
+
+## `PermissionsAndroid.requestMultiple(perms: Permission[]): Promise<{ [K in Permission]: Result }>`
+
+Requests the given mutiple permissions.
+
+# APIs: Constants
+
+## `PermissionsAndroid.PERMISSIONS`
+
+See [shared.ts](https://github.com/kt3k/lepont-permissions-android/blob/main/src/shared.ts) for details.
+
+## `PermissionsAndroid.RESULTS`
+
+See [shared.ts](https://github.com/kt3k/lepont-permissions-android/blob/main/src/shared.ts) for details.
+
 # License
 
 MIT
 
-[lepont]: https://github.com/kt3k/lepont-permissions-android
+[lepont]: https://github.com/kt3k/lepont
 [PermissionsAndroid]: https://reactnative.dev/docs/permissionsandroid
