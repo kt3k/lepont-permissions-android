@@ -1,4 +1,4 @@
-# lepont-permissions-android
+# lepont-permissions-android v0.1.0
 
 > [lepont][] bridge for [PermissionsAndroid][] feature
 
