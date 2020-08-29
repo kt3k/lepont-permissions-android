@@ -1,6 +1,6 @@
 {
   "name": "@lepont/permissions-android",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "lepont bridge for PermissionsAndroid",
   "main": "dist/index.js",
   "types": "./types/index.d.ts",
