@@ -12,10 +12,10 @@ import {
 } from "./shared";
 
 type PermissionsAndroidModule = {
-  request: (perssmion: Permission, rationale?: Rationale) => Promise<Result>;
-  check: (perssmion: Permission, rationale?: Rationale) => Promise<Result>;
+  request: (permission: Permission, rationale?: Rationale) => Promise<Result>;
+  check: (permission: Permission, rationale?: Rationale) => Promise<Result>;
   requestMultiple: (
-    perssmions: Permission[]
+    permisions: Permission[]
   ) => Promise<{ [K in Permission]?: Result }>;
 };
 
